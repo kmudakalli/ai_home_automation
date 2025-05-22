@@ -1,12 +1,12 @@
-# AI Home Automation Project
+# AI Home Automation 
 
-This project uses Home Assistant and AppDaemon to build an AI-enhanced smart home automation system that responds to user behavior, weather conditions, and scheduled events.
+Uses Home Assistant and AppDaemon to build an AI-enhanced smart home automation system that responds to user behavior, weather conditions, and scheduled events.
 
-Predictive Lighting: Uses AppDaemon and presence detection to automatically adjust lighting when you arrive home.
-Behavioral HVAC Control: Trains a machine learning model to predict user arrival patterns and preemptively set temperature.
-Calendar-Based Automation: Integrates Google Calendar to prepare rooms before meetings or scheduled events.
-Weather-Based Lighting: Adjusts brightness and color temperature on overcast days to maintain comfort.
-Offline Redundancy: Includes a fallback script to run local automations in case of internet or Home Assistant service failure.
+uses AppDaemon and presence detection to automatically adjust lighting when you arrive home
+trains machine learning model to predict user arrival patterns and set temperature ahead of time
+calendar based automation: integrates Google Calendar to prepare room before meetings (close curtains, brighten lights, etc.)
+adjusts brightness and color temperature on overcast days to maintain comfort.
+offline redundancy fallback script on rasbperry pi
 
 Technologies: Python, AppDaemon, Home Assistant, YAML, scikit-learn, joblib, requests, Raspberry Pi (for local fallback)
 
