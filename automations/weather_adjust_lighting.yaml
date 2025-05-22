@@ -1,0 +1,16 @@
+alias: Adjust Lighting on Overcast Days
+trigger:
+  - platform: state
+    entity_id: weather.home
+    to: "cloudy"
+condition:
+  - condition: time
+    after: "15:00:00"
+    before: "20:00:00"
+action:
+  - service: light.turn_on
+    data:
+      entity_id: light.living_room
+      brightness_pct: 70
+      color_temp: 370
+mode: single
